@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<!--CHANGE TITLE TO CURRENT SECTION-->
+	<title>Web Site Design &amp; Construction - CSS &amp; Style</title>	
+
+	</head>
+
+	<body>
+
+	<div id="Website">
+
+	<div id="Title">
+	<p>Web Site Design &amp; Construction</p>
+	</div>
+	
+	<div id="Nav">
+	<!--CHANGE CLASS TO CURRENT FOR CURRENT SECTION-->
+	<a class="link home" href="../index.html">Home</a>
+	<a class="link history" href="../history.html">History</a>
+	<a class="link html" href="../html/index.html">HTML Basics</a>
+	<a class="link css current" href="index.html">CSS &amp; Style</a>
+	<a class="link java" href="../javascript/index.html">JavaScript</a>
+
+	</div>
+
+	<div id="Content">
+	<!--CONTENT HERE-->
+	<h1>Text Styling</h1>
+	
+	<p>Finally, we can get rid of that awful default font-face! Actually, I don't know what your default font is, but I quite like mine. Regardless we're going to change it. We're going to change the size. We're going to change the colour. We're going to change the alignment. We might even add some text decoration based on how I'm feeling.</p>
+	
+	<h2>Font Stacks</h2>
+	
+	<p>First thing we're going to do is change the font. Nobody likes the default font. Yes, I know what I just said! Ignore that. We're going to change the font-face using the <code>font-family</code> attribute. Logical, eh? Who says computer scientists aren't intemelectual! Find a font you like, preferably one on your machine. If you can't find one you like, select one from the <a href="http://www.google.com/fonts/">Google Fonts</a> page. I'm going to use a cool one on my iMac called "Marker Felt", purely to prove a point. I want to use this as my heading font, so I need to put the line of code within my <code>h1</code> selector. Change your font like this:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">My h1 font stack.</span>
+	<img src="images/heading_font.png" alt="H1 Font Change" />
+	</span>
+	</p>
+	
+	<p>You'll notice that my <code>font-family</code> attribute has more than just the single font which I wanted to use. This is incredible foresight by myself as I am keenly aware that not all people will have the awesome font known as "Marker Felt" on their computer. Therefore we have to accomodate for when this font isn't on the device. This is called a font stack. If the first font cannot be found then it defaults to the second font, "Arial" - you should have heard of that one. If that cannot be found then it will default to the generic serif font on the computer being used to view the page. These font stacks can be as big or small as you want them to be. I advise they're around 2 or 3 fonts long. Feel free to add a font stack to your body selector as well, this will change the default font for the whole page. I'm going to choose "Nanum Pen Script" as my main page font. Fun times!</p>
+	
+	<h2>Font Size and Colour</h2>
+	
+	<p>I have a problem. See if you can identify what it is with this screen of my current web page being rendered in a browser:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">Why is my text so small?!</span>
+	<img src="images/problem.png" alt="My Problem" />
+	</span>
+	</p>
+	
+	<p>Spot it? My main body text is far too small. What a pain. This means that we're going to have to change our text size. I wonder how we would do that. Well, it's quite simple, we use the <code>font-size</code> attribute. I'm going to put this into our <code>body</code> style. Make our font a little bit bigger. Like so:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">CSS, MAKE ME BIGGER!</span>
+	<img src="images/font_size.png" alt="Font Size Changes" />
+	</span>
+	</p>
+	
+	<p>The font size can be changed in a number of ways, all described <a href="http://www.w3schools.com/cssref/pr_font_font-size.asp">here</a>. I like using the <em>length</em> modifier, no idea why. Just do. The issue I have now, won't screenshot it as you should be able to imagine it, is that my heading is too big. So I'm going to change the size of that back to what it was, I'm also going to change the colour of the heading. To do this we use the <code>color</code> attribute. Unfortunately it might take a little getting used to writing colour the American, but you'll soon adapt. The colour of elements can be changed in a number of ways (see <a href="http://www.w3schools.com/cssref/pr_text_color.asp">here</a>), I like to think that the most efficient way is through the Hexadecimal colours, either that or the 17 named colours that the browser identifies. I'm going to change the heading of my website to a nice red, and I'm also going to go into our "blue" class and change that colour to blue, because that was the point of creating that class.</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">I have changed the colour of my h1 tag to red, and the colour of my blue class to blue.</span>
+	<img src="images/colour.png" alt="Font Colour Changes" />
+	</span>
+	</p>
+	
+	<p>The above CSS will change the colours of some of my text, feel free to change more of yours if you want to. The next thing I want to do is align my heading to the centre of the page. This is done quite simply.</p>
+	
+	<h2>Text Alignment</h2>
+	
+	<p>The <code>text-align</code> attribute dictates where the text will be aligned. The properties able to be applied to this attribute are <code>right</code>, <code>left</code> and <code>center</code> (again, the American spelling...), for my website I'm going to align my heading to the centre, like so:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">Alignment. Normally I'm chaotic good or lawful evil. Wait, wrong game.</span>
+	<img src="images/align.png" alt="Font Alignment Changes" />
+	</span>
+	</p>
+
+	<a href="../css/css3.html" class="button right">Next&nbsp;&raquo;</a>	
+
+
+	<p>That's about it for text manipulation. You can add underlines to your text by using <code>text-decoration:underline;</code> you can make it bold by using <code>font-weight:bold;</code> and you can make it italic by using <code>font-style:italic;</code> though the latter two are made redundant by the presence of <code>strong</code> and <code>em</code> respectively. Next on the agenda - positioning and manipulating elements.</p>
+	
+	</div>
+
+	<div id="Sidebar">
+		<h3>Contents</h3>
+		<ol>
+			<li><a href="../html/index.html">HTML Basics</a></li>
+			<li><a href="../html/html1.html">Document Essentials</a></li>
+			<li><a href="../html/html2.html">Essential Tags</a></li>
+			<li><a href="../html/html3.html">Other Tags</a></li>
+			<li><a href="../css/index.html">Cascading Style Sheets</a></li>
+			<li><a href="../css/css1.html">Internal Style &amp; Syntax</a></li>
+			<li><a href="../css/css2.html"><em>Text Styling</em></a></li>
+			<li><a href="../css/css3.html">Positioning Elements</a></li>
+			<li><a href="../css/css4.html">Backgrounds, Margins &amp; Padding</a></li>
+			<li><a href="../css/css5.html">Borders &amp; External CSS</a></li>
+			<li><a href="../css/css6.html">Finished Product</a></li>
+			<li><a href="../javascript/index.html">JavaScript Basics</a></li>
+		</ol>
+	</div>
+
+	</div>
+
+	</body>
+
+</html>

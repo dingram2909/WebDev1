@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<!--CHANGE TITLE TO CURRENT SECTION-->
+	<title>Web Site Design &amp; Construction - CSS &amp; Style</title>	
+
+	</head>
+
+	<body>
+
+	<div id="Website">
+
+	<div id="Title">
+	<p>Web Site Design &amp; Construction</p>
+	</div>
+	
+	<div id="Nav">
+	<!--CHANGE CLASS TO CURRENT FOR CURRENT SECTION-->
+	<a class="link home" href="../index.html">Home</a>
+	<a class="link history" href="../history.html">History</a>
+	<a class="link html" href="../html/index.html">HTML Basics</a>
+	<a class="link css current" href="index.html">CSS &amp; Style</a>
+	<a class="link java" href="../javascript/index.html">JavaScript</a>
+
+	</div>
+
+	<div id="Content">
+	<!--CONTENT HERE-->
+	<h1>Backgrounds, Margins &amp; Padding</h1>
+	
+	<p>The ability to add backgrounds to our divisions is one of the many fun features of using CSS. We can either add a block colour as our background, or we can use an image. I will be doing both on this page. Then we will go over margins and padding, because we will need them after out backgrounds are coloured.</p>
+	
+	<h2>Background Colours</h2>
+	
+	<p>Adding colours to our division background is as simple as adding colour to our text. Just with an extra word and a hyphen added in. It's the same principle, so I'm just going to go ahead and add colour to our title and navigation divisions. Black and Grey should work.</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">Colours are so easy to set it's almost a joke. Speaking of which...</span>
+	<img src="images/background_colour.png" alt="Background 1" />
+	</span>
+	</p>
+	
+	<h2>Background Images</h2>
+	
+	<p>Background images are slightly more tricky, but still quite simple if you remember your <code>background-repeat</code> attribute. Luckily for us, we want it to repeat as much as possible. But there are other settings for that attribute (<a href="http://www.w3schools.com/cssref/pr_background-repeat.asp">here</a>). Pick an image to use as your background and find its location. Then, using the <code>background-image</code> attribute apply the following <code>url(LOCATION OF IMAGE HERE)</code> to your content division, so your end product should look something similar to this:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">My background image attribute, which will fill the screen.</span>
+	<img src="images/background_image.png" alt="Background 2" />
+	</span>
+	</p>
+	
+	<p>That's our backgrounds sorted. Now, if you check your page it should be nice and pretty. I mean, some of your content will be hidden behind your title and navigation, but we'll sort that in a moment.</p>
+	
+	<h2>Margins &amp; Padding</h2>
+	
+	<p>Margins and Padding are two opposite ends of the same scale, they both deal with how much room there is at the edges of each container. Margin governs how much space there is between the edges of the container and the other elements, and padding controls the amount of space between the edges and the content within the container. Using this information we are now going to make our website look damn sexy. Well, ish. The first thing I want to do, and it's been killing me for most of the last 4 pages, is centre our main container division so that it's central within the browser. To do this we set its <code>margin</code> attribute to <code>0 auto</code>. Do this now. Check your page. Isn't that much better?</p>
+	
+	<p>The next thing we should do is add a top margin to our navigation division. This is because, at the moment, it is overlapping our title <code>div</code>. We know the height of that division, so we should set the <code>margin-top</code> of the navigation division to the height of our title. Check your page again, looking better isn't it?</p>
+	
+	<p>The final piece of positioning we want to do is to make our content fit within the section we've allocated for it. To do this we should set the padding of the top and left to the height of the title and the width of the navigation, respectively. So we'll go ahead and do this, and your final content section should look something similar to this:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">My content CSS. It's all shiny and well positioned.</span>
+	<img src="images/content.png" alt="Content Section" />
+	</span>
+	</p>
+	
+	<a href="../css/css5.html" class="button right">Next&nbsp;&raquo;</a>	
+	
+	<p>Check your web page again. Everything should now be positioned properly. See, it's not that difficult when you know the tricks. The next page will go over borders and we'll reskin those horrible anchor tags in our navigation bar. Then we're done in terms of content and design. With only a little bit of clever stuff to be added with JavaScript.</p>
+	
+	
+	</div>
+
+	<div id="Sidebar">
+		<h3>Contents</h3>
+		<ol>
+			<li><a href="../html/index.html">HTML Basics</a></li>
+			<li><a href="../html/html1.html">Document Essentials</a></li>
+			<li><a href="../html/html2.html">Essential Tags</a></li>
+			<li><a href="../html/html3.html">Other Tags</a></li>
+			<li><a href="../css/index.html">Cascading Style Sheets</a></li>
+			<li><a href="../css/css1.html">Internal Style &amp; Syntax</a></li>
+			<li><a href="../css/css2.html">Text Styling</a></li>
+			<li><a href="../css/css3.html">Positioning Elements</a></li>
+			<li><a href="../css/css4.html"><em>Backgrounds, Margins &amp; Padding</em></a></li>
+			<li><a href="../css/css5.html">Borders &amp; External CSS</a></li>
+			<li><a href="../css/css6.html">Finished Product</a></li>
+			<li><a href="../javascript/index.html">JavaScript Basics</a></li>
+		</ol>
+	</div>
+
+	</div>
+
+	</body>
+
+</html>

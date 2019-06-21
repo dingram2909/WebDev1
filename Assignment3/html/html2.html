@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<!--CHANGE TITLE TO CURRENT SECTION-->
+	<title>Web Site Design &amp; Construction - HTML Basics</title>	
+
+	</head>
+
+	<body>
+
+	<div id="Website">
+
+	<div id="Title">
+	<p>Web Site Design &amp; Construction</p>
+	</div>
+	
+	<div id="Nav">
+	<!--CHANGE CLASS TO CURRENT FOR CURRENT SECTION-->
+	<a class="link home" href="../index.html">Home</a>
+	<a class="link history" href="../history.html">History</a>
+	<a class="link html current" href="index.html">HTML Basics</a>
+	<a class="link css" href="../css/index.html">CSS &amp; Style</a>
+	<a class="link java" href="../javascript/index.html">JavaScript</a>
+
+	</div>
+
+	<div id="Content">
+	<h1>Essential Tags</h1>
+	<p>Throughout the course of your web development you will notice that there are certain tags which are used a lot more than others. These are things like your heading tags (<code>h1</code> to <code>h6</code>, used, remarkably, for headings), your paragraph tags (<code>p</code>, used for blocks of text), and your anchor tags (<code>a</code>, used for hyperlinks, or occasionally crude styling).</p>
+	
+	<p>Generally most tags share at least four main attributes, some can have more than the generic four, but some are restricted to just four. These attributes, which don't have to be used, are <code>class</code>; <code>id</code>; <code>style</code>; and <code>title</code>. Your <code>class</code> attribute is used for assigning a CSS defined class to your content. This class would contain certain styling information such as the font-face to be used or how bright to make the pink you want to use. The <code>id</code> attribute works in a similar manner, although you can only assign an ID to one tag. So these are generally used for your page division (<code>div</code>) tags.</p>
+	
+	<p>The <code>style</code> attribute is used for applying style to tags. You don't generally see these anymore as they have been largely made redundant by CSS; we won't be using them in this website. Neither will we be using the <code>title</code> attribute, which gives a title to the tag it is included in. This is used to add more accessibility to the website, it is very useful to screen readers.</p>
+	
+	<h2>Page Division Tags</h2>
+		
+	<p>One of the core tags in web development is the page division tag, <code>div</code>, this is used to allocate page divisions. Essentially how it works is that it separates the page up into easily manipulated blocks. At the moment we haven't learnt how to manipulate these blocks, but later we'll be using them quite extensively, so put some into your document.</p>
+	
+	<p>I like to put my entire website in one set of division tags so that I can centre it in the browser, so create a couple of <code>div</code> tags and give them the <code>id</code> of "Website". It is important to note that there are no real accepted naming conventions in terms of class and ID names, as long as you keep the same style across the board you should be ok. I like to create IDs and give them an upper case starting letter. Classes are all lower case names, but this is just personal preference. Feel free to name your IDs and classes how you wish. As long as it's not rude. Well, not too rude. Actually, go ahead and do what you like.</p>
+	
+	<p>When you've created the main website division, create a few more inside it for your content, navigation and title. Name these appropriately and return to me. Your current document should now look similar to this:</p>
+		
+	<p class="centre">
+	<span class="image">
+	<span class="title">My div tags. Without silly names.</span>
+	<img src="images/div_tags.png" alt="Division Tags" />
+	</span>
+	</p>
+	
+	<h2>Heading Tags</h2>
+	
+	<p>Now we have our page divisions in place, we can work on some content (please note, normally when I build a web site I get the design looking and working how I want it to, then I put content in). We'll start by putting something in our title division.</p>
+	
+	<p>The title will be at the top of the page, and we want it to stand out, so we should use some heading tags. Now, we have a wealth of tags at our disposal (Ok, so 6 isn't really a wealth of tags, but it's more than we have for most things) but I'm going to be boring and just use the <code>h1</code> tag. Feel free to use whichever tag you think is appropriate, test them out in your browser, they all look different. Give your page a heading in the title section.</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">My heading, logically it's the same as my title.</span>
+	<img src="images/heading.png" alt="Heading Tags" />
+	</span>
+	</p>
+	
+	<h2>Paragraph Tags</h2>
+	
+	<p>Paragraph tags are probably the most used of all tags within the HTML document. Paragraph tags, written as <code>&lt;p&gt;&lt;/p&gt;</code> are the containers for any blocks of text within your website. For example, this block of text you're reading now? Contained within <code>p</code> tags. That big introduction at the top there? <code>p</code> tags. That bacon you're eating? <code>p</code> tags. Ok, well, maybe that last one wasn't paragraph tags. But it would be cool, wouldn't it?</p>
+	
+	<p>If you need a block of text within your web page you sort of have to surround it with paragraph tags. These can be assigned classes, as with all other tags, and can be extensively customised with some simple CSS (yes, we will hopefully get on to that at <em>some</em> point). For our tutorial we're going to put some content into our website. For the purposes of showing you an example I'm going to use a lorem ipsum generator to create some dummy text to input into my document. You should just go ahead an plug in whatever content you like though. Or do as I do and go to <a href="http://www.lipsum.com">here</a> and generate some lovely pseudo-latin. Make sure you wrap each individual paragraph in its own set of tags.</p>
+	
+	<p>After you've entered your content into your content division you should end up with something similar to this (but with actual words, not dummy text):</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">Look, content. Even if it is nonsensical, it's pretty. Ish.</span>
+	<img src="images/lipsum.png" alt="An example of content." />
+	</span>
+	</p>
+	
+	<h2>Anchor Tags</h2>
+	
+	<p>Anchor tags are probably the most used of all tags within the, hang on. Wait a moment. Didn't I say this for paragraph tags? Damn. Anchor tags are used a lot. Sometimes more than paragraph tags, but very rarely. They are, however, the most useful of all tags, allowing your visitors to navigate around your website and, if it's truly terrible, away to the safety net of Google. Though if it's really that bad, they probably won't want to touch it and will just close their web browser and burn their computer. Which might be apt for certain machines.</p>
+	
+	<p>Wow, I do tend to go off on a tangent sometimes don't I? Anyway, back on point. Anchor tags are used to link to other places outside of your page (sometimes they can be used to jump to fun places on your current page. I use the term fun in its loosest sense there. We need some links on our web site, I'm going to add two to our page, one for "Home" which will link to the current page, the other will be called "Page 2" and will link to a second, as of yet uncreated page. Feel free to add as many links to your navigation division as you wish. This is done using the <code>&lt;a&gt;&lt;/a&gt;</code> notation. Inside the opening tag, however, we're going to do something a bit interesting and use a new attribute. This new attribute is called <code>href</code> and instructs the browser where to point the user when the link is clicked. So after the <code>href</code> tag put your link in like so:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">Anchor Tags! We have a navigation section!</span>
+	<img src="images/anchor.png" alt="An example of anchor tags." />
+	</span>
+	</p>
+	
+	<a href="html3.html" class="button right">Next&nbsp;&raquo;</a>		
+	
+	<p>Just a quick note, to put in a link to an external site you generally need the whole address, with the <code>http://</code> snippet on the front. Just saying. It's one of those things. Y'know. But why you would want to do that when I'm teaching you to create something so pretty, I don't know. Go ahead and open your page in your browser, see how it looks.</p>
+	
+	</div>
+
+	<div id="Sidebar">
+			<h3>Contents</h3>
+		<ol>
+			<li><a href="../html/index.html">HTML Basics</a></li>
+			<li><a href="../html/html1.html">Document Essentials</a></li>
+			<li><a href="../html/html2.html"><em>Essential Tags</em></a></li>
+			<li><a href="../html/html3.html">Other Tags</a></li>
+			<li><a href="../css/index.html">Cascading Style Sheets</a></li>
+			<li><a href="../css/css1.html">Internal Style &amp; Syntax</a></li>
+			<li><a href="../css/css2.html">Text Styling</a></li>
+			<li><a href="../css/css3.html">Positioning Elements</a></li>
+			<li><a href="../css/css4.html">Backgrounds, Margins &amp; Padding</a></li>
+			<li><a href="../css/css5.html">Borders &amp; External CSS</a></li>
+			<li><a href="../css/css6.html">Finished Product</a></li>
+			<li><a href="../javascript/index.html">JavaScript Basics</a></li>
+		</ol>
+	</div>
+
+	</div>
+
+	</body>
+
+</html>

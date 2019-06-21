@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<!--CHANGE TITLE TO CURRENT SECTION-->
+	<title>Web Site Design &amp; Construction - CSS &amp; Style</title>	
+
+	</head>
+
+	<body>
+
+	<div id="Website">
+
+	<div id="Title">
+	<p>Web Site Design &amp; Construction</p>
+	</div>
+	
+	<div id="Nav">
+	<!--CHANGE CLASS TO CURRENT FOR CURRENT SECTION-->
+	<a class="link home" href="../index.html">Home</a>
+	<a class="link history" href="../history.html">History</a>
+	<a class="link html" href="../html/index.html">HTML Basics</a>
+	<a class="link css current" href="index.html">CSS &amp; Style</a>
+	<a class="link java" href="../javascript/index.html">JavaScript</a>
+
+	</div>
+
+	<div id="Content">
+	<!--CONTENT HERE-->
+	<h1>Borders &amp; External CSS.</h1>
+	
+	<p>Borders are a cool feature of CSS, though I don't use them as much as others do. I generally only use them to wrap the main container division in something to separate it from the colour of the backdrop. I occasionally use the <code>border-radius</code> attribute to make my corners round. That's usually all I use from the border attribute library. The border comes in three sections: <code>border-width</code>, <code>border-style</code> and <code>border-color</code>. I would hope that these are fairly self-explanatory, but for the morons among us - <code>border-width</code> dictates how wide the border is going to be; <code>border-style</code> controls the style of the border, this can be solid, dashed, or any number of things (see <a href="http://www.w3schools.com/cssref/pr_border-style.asp">here</a>); and <code>border-color</code> sets the colour of the border.</p>
+	
+	<p>For our tutorial I'm just going to set a nice, relatively thin, border around our container division, so that it stands out that little bit more. This is how I've done it:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">My container div, now with added border!</span>
+	<img src="images/border.png" alt="Border Example" />
+	</span>
+	</p>
+	
+	<p>That's all we have to learn in terms of our CSS. Now, as I've mentioned, I hate the default anchor tags, so I'm going to take the attributes which we've learnt here and reskin my anchor tags to make them pretty. See if you can do the same and meet back here in 20 mins. Then we'll move on to JavaScript</p>
+	
+	<p>*twenty minutes pass*</p>
+	
+	<p>Oh, hello again. How did you do? This is what I did:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">Finally, no more hideous underlines!</span>
+	<img src="images/anchor.png" alt="Anchor Reskin" />
+	</span>
+	</p>
+	
+	<p>I'll show you what my final site looks like on the next page. It's safe to say I'm happy with it. Though it's not the best colour scheme or layout, it serves well as an introduction to the many techniques you will need as a web developer. The last thing which I have to show you in this section is how to externalise your CSS. This is relatively simple. Create a new text file and name it something along the lines of "style.css". Now, go to your header section where all of your style is being kept and copy everything contained within the <code>style</code> tags, but not the tags themselves, and paste them into the new text file. Then delete all of your style from your main page, you don't need it anymore. This time, do include the <code>style</code> tags in your delete. After this, type the following line into your header:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">Your CSS is now externalised.</span>
+	<img src="images/css.png" alt="CSS Removal" />
+	</span>
+	</p>
+	
+	<a href="../css/css6.html" class="button right">Next&nbsp;&raquo;</a>		
+	
+	<p>Go to your browser, refresh the page, you should notice that nothing changes. Your CSS is now external to your web page, meaning that you can now use it across multiple pages. Go ahead and make a second page (which we've already linked to) if you want. Try it out. Should look the same. I'll wait for you in the JavaScript section.</p>
+	
+	</div>
+
+	<div id="Sidebar">
+		<h3>Contents</h3>
+		<ol>
+			<li><a href="../html/index.html">HTML Basics</a></li>
+			<li><a href="../html/html1.html">Document Essentials</a></li>
+			<li><a href="../html/html2.html">Essential Tags</a></li>
+			<li><a href="../html/html3.html">Other Tags</a></li>
+			<li><a href="../css/index.html">Cascading Style Sheets</a></li>
+			<li><a href="../css/css1.html">Internal Style &amp; Syntax</a></li>
+			<li><a href="../css/css2.html">Text Styling</a></li>
+			<li><a href="../css/css3.html">Positioning Elements</a></li>
+			<li><a href="../css/css4.html">Backgrounds, Margins &amp; Padding</a></li>
+			<li><a href="../css/css5.html"><em>Borders &amp; External CSS</em></a></li>
+			<li><a href="../css/css6.html">Finished Product</a></li>
+			<li><a href="../javascript/index.html">JavaScript Basics</a></li>
+		</ol>
+	</div>
+
+	</div>
+
+	</body>
+
+</html>

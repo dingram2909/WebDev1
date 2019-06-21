@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<!--CHANGE TITLE TO CURRENT SECTION-->
+	<title>Web Site Design &amp; Construction - CSS &amp; Style</title>	
+
+	</head>
+
+	<body>
+
+	<div id="Website">
+
+	<div id="Title">
+	<p>Web Site Design &amp; Construction</p>
+	</div>
+	
+	<div id="Nav">
+	<!--CHANGE CLASS TO CURRENT FOR CURRENT SECTION-->
+	<a class="link home" href="../index.html">Home</a>
+	<a class="link history" href="../history.html">History</a>
+	<a class="link html" href="../html/index.html">HTML Basics</a>
+	<a class="link css current" href="index.html">CSS &amp; Style</a>
+	<a class="link java" href="../javascript/index.html">JavaScript</a>
+
+	</div>
+
+	<div id="Content">
+	<!--CONTENT HERE-->
+	<h1>Positioning Elements</h1>
+	
+	<p>Now we have our text all nice and pretty (well, mine is, I don't know what yours is like) we should probably look at positioning our elements and making our site look vaguely respectable. The first thing we'll look at is changing some of the size attributes of our divisions. Then we will use the <code>position</code> attribute to change how each division is positioned. This can be a tricky concept to understand, so I will link out to the W3 Schools page again, as they explain it perfectly. Then on the next page we'll be adding some colour, and maybe background images, to our content. After that we'll talk about margins and padding. Then I'll go over borders and that should be us done with CSS, but we'll see how things go.</p>
+	
+	<h2>Changing Sizes</h2>
+	
+	<p>There are two elements to the size of our objects, <code>height</code> and <code>width</code>, one of these (height) should always be flexible unless you have a good reason for restricting it. The other can be absolute or variable based on preference. I like to make the width of my pages absolute so that the style stays the same regardless of the size of the window. So for our tutorial I'm going to make the width of my outer division 900 pixels. This is wide enough for most modern screens, but not too wide for some older ones. You change the width like so:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">My absolute width.</span>
+	<img src="images/width.png" alt="Width Changes" />
+	</span>
+	</p>
+	
+	<p>I'm also going to change the width at a later point, post-positioning, so that they fit in with the design we are building. For now we should position our elements.</p>
+	
+	<h2>Positioning</h2>
+	
+	<p><a href="http://www.w3schools.com/cssref/pr_class_position.asp">Positioning</a> can be awkward, especially when you start fiddling with things like floats and absolute/relative positioning, but it should be simple for what we want to do. The first thing we want to do is make our outer division <code>relative</code> to the browser window. This is done like so:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">The ID Website is now positioned relatively.</span>
+	<img src="images/relative.png" alt="Positioning 1" />
+	</span>
+	</p>
+	
+	<p>At the moment, this has changed nothing about the page, but it will. We should change all interior divisions (except content) so that they are <code>absolute</code>. This means that they will be positioned to the pixel based on their parent container (our Website division). For the moment, this will make your site look a mess, but keep with me. Absolute positioning is done like so:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">Now our divs are absolutely positioned. This will mess up your site now.</span>
+	<img src="images/absolute.png" alt="Positioning 2" />
+	</span>
+	</p>
+	
+	<p>With our divisions positioned absolutely we can now go about the task of moving them. This is done using the attributes <code>top</code>, <code>bottom</code>, <code>left</code> and <code>right</code>. Our title division wants to be at the top. Right at the very top. So we should assign it the attribute <code>top:0;</code>. We also want it to be the whole width of the page so I'm going to go ahead and make <code>width</code> equal 100%. We want our navigation to be on the left, but also be the same height as our main page, so we should make its <code>top</code>, <code>bottom</code> and <code>left</code> attributes all 0, alternatively we could change its <code>height</code> attribute to be 100%, but there is a reason why this is inadvisable, which we will touch on later. This will force the division to remain the same height as our Website container. I'm also going to make the width of this division equal to 250 pixels. The content we can probably leave as is. For now.</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">Positioning seems so simple doesn't it?</span>
+	<img src="images/position.png" alt="Positioning 3" />
+	</span>
+	</p>
+	
+	<a href="../css/css4.html" class="button right">Next&nbsp;&raquo;</a>
+	
+	<p>That's our elements positioned. Or at least it should be. I'm a little hazy when it comes to positioning elements. I think I've done it right, but we'll see when we get there. The next page will add some more colour, and a background image, to our content, and you'll hopefully see why I said your web page will have been messed up by our positioning efforts.</p>
+	
+	</div>
+
+	<div id="Sidebar">
+		<h3>Contents</h3>
+		<ol>
+			<li><a href="../html/index.html">HTML Basics</a></li>
+			<li><a href="../html/html1.html">Document Essentials</a></li>
+			<li><a href="../html/html2.html">Essential Tags</a></li>
+			<li><a href="../html/html3.html">Other Tags</a></li>
+			<li><a href="../css/index.html">Cascading Style Sheets</a></li>
+			<li><a href="../css/css1.html">Internal Style &amp; Syntax</a></li>
+			<li><a href="../css/css2.html">Text Styling</a></li>
+			<li><a href="../css/css3.html"><em>Positioning Elements</em></a></li>
+			<li><a href="../css/css4.html">Backgrounds, Margins &amp; Padding</a></li>
+			<li><a href="../css/css5.html">Borders &amp; External CSS</a></li>
+			<li><a href="../css/css6.html">Finished Product</a></li>
+			<li><a href="../javascript/index.html">JavaScript Basics</a></li>
+		</ol>
+	</div>
+
+	</div>
+
+	</body>
+
+</html>

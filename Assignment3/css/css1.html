@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<!--CHANGE TITLE TO CURRENT SECTION-->
+	<title>Web Site Design &amp; Construction - CSS &amp; Style</title>	
+
+	</head>
+
+	<body>
+
+	<div id="Website">
+
+	<div id="Title">
+	<p>Web Site Design &amp; Construction</p>
+	</div>
+	
+	<div id="Nav">
+	<!--CHANGE CLASS TO CURRENT FOR CURRENT SECTION-->
+	<a class="link home" href="../index.html">Home</a>
+	<a class="link history" href="../history.html">History</a>
+	<a class="link html" href="../html/index.html">HTML Basics</a>
+	<a class="link css current" href="index.html">CSS &amp; Style</a>
+	<a class="link java" href="../javascript/index.html">JavaScript</a>
+
+	</div>
+
+	<div id="Content">
+	<!--CONTENT HERE-->
+	<h1>Internal Style &amp; Syntax</h1>
+	
+	<p>Styling information is stored in our header, remember that part from way back? There are two ways of declaring styling information within our web site. The first, which we will cover, is writing the style internally on each page. This can be convenient for style elements which are only active on one page, but becomes tedious and exhausting if you want the same style on multiple pages. The second is an external style document which is called in to the page at runtime and stores all of the style information. We are going to start out our styling with the former and then rapidly transition over to the latter method, probably on the last page of this section, but we'll see.</p>
+	
+	<p>First thing we need to do before we start grappling with CSS is to give ourselves somewhere to put it, so find your header section and put the following code in there:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">Style tags. They're so ... stylish!</span>
+	<img src="images/style.png" alt="Style Tags" />
+	</span>
+	</p>
+	
+	<p>The tags above are how we denote that the contents will contain styling information. In the opening tag you'll notice that there is an attribute called <code>type</code>, this tells the browser what type of style will be coming up. So for our style we'll be inputting in text and it will be interpreted as CSS.</p>
+	
+	<h2>CSS Selectors</h2>
+	
+	<p>Now we have our styling section we can start to populate it with stuff which will make our website nice and pretty. To do this we need to use CSS selectors. These selectors ensure that the encompassed styling will only be applied to the sections we want. There are three types of selector, two of which we have covered briefly before. There is the Class selector, which utilises the <code>class</code> attribute in our HTML to assign the CSS. We use this by using a full-stop "." and then the class name. For example we have a class in our document called "blue" so our class within our style would be <code>.blue</code>, after you've chosen your selector you use squiggly brackets, { and }, to open and close your CSS for that selector. Do this for your "blue" class. It should look something like this:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">The class selector. Selects a specific class.</span>
+	<img src="images/blue.png" alt="Class Selector" />
+	</span>
+	</p>
+	
+	<p>At the moment we have no style within that class, but we'll get to that. The second selector is the ID selector which, if you remember from our HTML Basics section, can only be used once per page. This uses the <code>id</code> attribute in our HTML. We use this selector by using a hash followed by the name of the ID. We have an overall wrapper around our web site called "Website" so create our selector for that ID in our CSS block. Actually, go through and create one for all our IDs in our page, there should only be four:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">ID selectors. So cool.</span>
+	<img src="images/id.png" alt="ID Selectors" />
+	</span>
+	</p>
+	
+	<p>Again, there is no actual CSS within these selectors, but they're there for when we want to style them. The third, and final, type of selector we could, and probably will, use is the tag selector. This selects all tags and styles everything inside them. For example, I hate how anchor tags default to blue and are underlined, so to change this for all anchor I would just use the anchor tag selector within CSS, which is done by just typing the tag and putting our curly brackets as per normal. I'm going to use this selector to change the anchor tags, the heading tag which I used and the overall body of the page. Like so:</p>
+	
+	<p class="centre">
+	<span class="image">
+	<span class="title">This is what I mean when I say that CSS is powerful.</span>
+	<img src="images/tags.png" alt="Tag Selectors" />
+	</span>
+	</p>
+	
+	<a href="../css/css2.html" class="button right">Next&nbsp;&raquo;</a>	
+	
+	<p>This has given us our overall structure for our web page's style. Now all we need to do is add the styling information. And that won't take long at all. Will it? Yes? No? Maybe? I dunno. We'll see. It's not overly complex, but it <em>is</em> a long process. You see CSS is powerful, but it can also be temperamental. Hopefully this doesn't happen today. Also, I should note that what I'm doing in this tutorial is just one way of doing things.</p>
+	
+	</div>
+
+	<div id="Sidebar">
+		<h3>Contents</h3>
+		<ol>
+			<li><a href="../html/index.html">HTML Basics</a></li>
+			<li><a href="../html/html1.html">Document Essentials</a></li>
+			<li><a href="../html/html2.html">Essential Tags</a></li>
+			<li><a href="../html/html3.html">Other Tags</a></li>
+			<li><a href="../css/index.html">Cascading Style Sheets</a></li>
+			<li><a href="../css/css1.html"><em>Internal Style &amp; Syntax</em></a></li>
+			<li><a href="../css/css2.html">Text Styling</a></li>
+			<li><a href="../css/css3.html">Positioning Elements</a></li>
+			<li><a href="../css/css4.html">Backgrounds, Margins &amp; Padding</a></li>
+			<li><a href="../css/css5.html">Borders &amp; External CSS</a></li>
+			<li><a href="../css/css6.html">Finished Product</a></li>
+			<li><a href="../javascript/index.html">JavaScript Basics</a></li>
+		</ol>
+	</div>
+
+	</div>
+
+	</body>
+
+</html>
